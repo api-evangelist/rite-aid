@@ -1,0 +1,7 @@
+aid: rite-aid
+url: https://raw.githubusercontent.com/api-evangelist/rite-aid/refs/heads/main/apis.yml
+modified: '2026-03-24'
+apis: []
+common:
+  - type: Website
+    url: https://www.rite-aid.com
