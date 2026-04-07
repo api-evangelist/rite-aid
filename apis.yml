@@ -1,7 +1,12 @@
 aid: rite-aid
-url: https://raw.githubusercontent.com/api-evangelist/rite-aid/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/rite-aid/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.rite-aid.com
+description: >-
+  Rite Aid is one of the nation's leading drugstore chains, providing prescription
+  drugs, health and beauty aids, and convenience items through its retail stores and
+  pharmacy services.
