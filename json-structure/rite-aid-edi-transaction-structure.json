@@ -1,0 +1,35 @@
+{
+  "name": "Rite Aid EDI Transaction",
+  "description": "Structure of an ANSI X12 EDI transaction for Rite Aid vendor integration",
+  "fields": [
+    {"name": "transactionSetId", "type": "enum", "values": ["810", "820", "832", "846", "850", "855", "856", "860", "865", "997"], "description": "ANSI X12 transaction set number", "required": true},
+    {"name": "transactionName", "type": "string", "description": "Human-readable transaction name"},
+    {"name": "version", "type": "enum", "values": ["4010", "5010"], "description": "ANSI X12 version", "required": true},
+    {
+      "name": "sender",
+      "type": "object",
+      "description": "Sender EDI identification",
+      "required": true,
+      "fields": [
+        {"name": "id", "type": "string", "description": "EDI sender ID", "required": true},
+        {"name": "qualifier", "type": "string", "description": "ID qualifier", "required": true},
+        {"name": "name", "type": "string", "description": "Sender company name"}
+      ]
+    },
+    {
+      "name": "receiver",
+      "type": "object",
+      "description": "Receiver EDI identification (Rite Aid)",
+      "required": true,
+      "fields": [
+        {"name": "id", "type": "string", "description": "Rite Aid EDI receiver ID", "required": true},
+        {"name": "qualifier", "type": "string", "required": true},
+        {"name": "name", "type": "string"}
+      ]
+    },
+    {"name": "controlNumber", "type": "string", "description": "Interchange control number", "required": true},
+    {"name": "date", "type": "date", "description": "Transaction date", "required": true},
+    {"name": "time", "type": "string", "description": "Transaction time (HHMM format)"},
+    {"name": "status", "type": "enum", "values": ["Pending", "Sent", "Acknowledged", "Accepted", "Rejected", "Error"], "description": "Processing status"}
+  ]
+}

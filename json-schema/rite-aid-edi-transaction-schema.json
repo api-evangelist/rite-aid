@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/api-evangelist/rite-aid/blob/main/json-schema/rite-aid-edi-transaction-schema.json",
+  "title": "Rite Aid EDI Transaction",
+  "description": "An EDI transaction record for Rite Aid vendor integration using ANSI X12 standards",
+  "type": "object",
+  "properties": {
+    "transactionSetId": {
+      "type": "string",
+      "description": "ANSI X12 transaction set identifier",
+      "enum": ["810", "820", "832", "846", "850", "855", "856", "860", "865", "997"]
+    },
+    "transactionName": {
+      "type": "string",
+      "description": "Human-readable transaction name",
+      "examples": [
+        "Invoice",
+        "Payment Order",
+        "Price/Sales Catalog",
+        "Inventory Inquiry/Advice",
+        "Purchase Order",
+        "Purchase Order Acknowledgment",
+        "Ship Notice/Manifest",
+        "Purchase Order Change Request",
+        "Purchase Order Change Acknowledgment",
+        "Functional Acknowledgment"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "description": "ANSI X12 version",
+      "enum": ["4010", "5010"]
+    },
+    "sender": {
+      "type": "object",
+      "description": "Sender identification",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "EDI sender ID"
+        },
+        "qualifier": {
+          "type": "string",
+          "description": "ID qualifier"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "qualifier"]
+    },
+    "receiver": {
+      "type": "object",
+      "description": "Receiver identification",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "EDI receiver ID (Rite Aid's ID)"
+        },
+        "qualifier": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "qualifier"]
+    },
+    "controlNumber": {
+      "type": "string",
+      "description": "Interchange control number"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Transaction date"
+    },
+    "time": {
+      "type": "string",
+      "description": "Transaction time (HHMM)"
+    },
+    "status": {
+      "type": "string",
+      "description": "Transaction processing status",
+      "enum": ["Pending", "Sent", "Acknowledged", "Accepted", "Rejected", "Error"]
+    }
+  },
+  "required": ["transactionSetId", "version", "sender", "receiver", "controlNumber", "date"]
+}

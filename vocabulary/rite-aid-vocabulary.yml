@@ -1,0 +1,120 @@
+name: Rite Aid Vocabulary
+description: >-
+  Vocabulary and taxonomy for Rite Aid pharmacy and retail operations,
+  covering EDI integration standards, pharmacy services, health screening,
+  and vendor supply chain processes.
+version: '1.0'
+created: '2026-05-02'
+modified: '2026-05-02'
+terms:
+  - term: EDI
+    definition: >-
+      Electronic Data Interchange - the computer-to-computer exchange of
+      business documents in a standard electronic format, replacing paper-based
+      processes. Rite Aid uses ANSI X12 EDI standards.
+    synonyms: [Electronic Data Interchange, B2B integration]
+    relatedTerms: [ANSI X12, transaction set, trading partner]
+
+  - term: ANSI X12
+    definition: >-
+      The American National Standards Institute Accredited Standards Committee
+      X12 standard for inter-industry electronic data interchange. Rite Aid
+      supports versions 4010 and 5010.
+    synonyms: [X12, ASC X12]
+    relatedTerms: [EDI, transaction set, ISA envelope]
+
+  - term: Transaction Set
+    definition: >-
+      A specific EDI document type identified by a three-digit number.
+      Key Rite Aid transaction sets: 850 (Purchase Order), 810 (Invoice),
+      856 (Ship Notice), 997 (Functional Acknowledgment).
+    synonyms: [EDI document, transaction type]
+    relatedTerms: [EDI, ANSI X12, purchase order]
+
+  - term: Purchase Order (850)
+    definition: >-
+      EDI transaction set 850 - Rite Aid sends purchase orders to vendors
+      for merchandise ordering. The primary transaction driving vendor
+      supply chain integration.
+    synonyms: [PO, order, 850]
+    relatedTerms: [EDI, purchase order acknowledgment, invoice]
+
+  - term: Invoice (810)
+    definition: >-
+      EDI transaction set 810 - Vendors submit invoices to Rite Aid for
+      goods delivered, replacing paper billing processes.
+    synonyms: [billing, 810]
+    relatedTerms: [EDI, purchase order, payment]
+
+  - term: Advance Ship Notice (856)
+    definition: >-
+      EDI transaction set 856 - Vendors notify Rite Aid in advance of
+      shipments including shipment contents, carton counts, and tracking.
+    synonyms: [ASN, ship notice, 856]
+    relatedTerms: [EDI, purchase order, shipment]
+
+  - term: Functional Acknowledgment (997)
+    definition: >-
+      EDI transaction set 997 - Confirms receipt and syntactic validity
+      of an EDI transmission. Required for all Rite Aid EDI transactions.
+    synonyms: [FA, ack, 997]
+    relatedTerms: [EDI, transaction set]
+
+  - term: Trading Partner
+    definition: >-
+      Any vendor, supplier, or business partner that exchanges EDI
+      transactions with Rite Aid through their EDI services platform.
+    synonyms: [vendor, supplier, business partner]
+    relatedTerms: [EDI, ISA, transaction set]
+
+  - term: ISA Envelope
+    definition: >-
+      The Interchange Control Header and Trailer (ISA/IEA segments)
+      that wrap EDI transmissions, containing sender/receiver IDs,
+      control number, and version information.
+    synonyms: [interchange envelope, EDI envelope]
+    relatedTerms: [EDI, ANSI X12, sender ID, receiver ID]
+
+  - term: Prescription
+    definition: >-
+      A medical order for a medication or health product issued by a
+      licensed healthcare provider and dispensed by Rite Aid pharmacy.
+      Identified by Rx number and NDC code.
+    synonyms: [Rx, script]
+    relatedTerms: [NDC, pharmacy, prescriber, dispense]
+
+  - term: NDC
+    definition: >-
+      National Drug Code - a unique 10 or 11-digit identifier assigned
+      to drugs by the FDA, used in pharmacy dispensing and insurance billing.
+    synonyms: [National Drug Code, drug code]
+    relatedTerms: [prescription, pharmacy, formulary]
+
+  - term: Preventive Health Screening
+    definition: >-
+      Rite Aid's annual blood panel screening service available at 2,000+
+      locations that tests for 1,200+ health conditions across two draws
+      six months apart.
+    synonyms: [blood panel, health screening, wellness check]
+    relatedTerms: [pharmacy, health, preventive care]
+
+  - term: OpenText Trading Grid
+    definition: >-
+      The third-party platform managing Rite Aid's EDI services, including
+      testing, certification, and ongoing transmission of EDI documents
+      between Rite Aid and its trading partners.
+    synonyms: [EDI platform, B2B platform]
+    relatedTerms: [EDI, trading partner]
+
+  - term: Vendor Portal
+    definition: >-
+      The Rite Aid vendor portal (raportal.riteaid.com) for accessing
+      supplier documentation, EDI requirements, and compliance guidelines.
+    synonyms: [supplier portal, RA portal]
+    relatedTerms: [EDI, trading partner, vendor]
+
+categories:
+  - name: EDI Integration
+    terms: [EDI, ANSI X12, Transaction Set, Purchase Order (850), Invoice (810), Advance Ship Notice (856), Functional Acknowledgment (997), ISA Envelope, Trading Partner, OpenText Trading Grid, Vendor Portal]
+  - name: Pharmacy
+    terms: [Prescription, NDC, Preventive Health Screening]

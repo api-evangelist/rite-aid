@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "ra": "https://riteaid.com/vocab#",
+    "edi": "https://riteaid.com/vocab/edi#",
+    "pharmacy": "https://riteaid.com/vocab/pharmacy#",
+
+    "EDITransaction": "edi:EDITransaction",
+    "PurchaseOrder": "edi:PurchaseOrder",
+    "Invoice": "edi:Invoice",
+    "ShipNotice": "edi:ShipNotice",
+    "Prescription": "pharmacy:Prescription",
+    "PharmacyLocation": "pharmacy:PharmacyLocation",
+    "HealthScreening": "ra:HealthScreening",
+
+    "transactionSetId": "edi:transactionSetId",
+    "transactionName": "edi:transactionName",
+    "ediVersion": "edi:version",
+    "controlNumber": "edi:controlNumber",
+    "senderId": "edi:senderId",
+    "receiverId": "edi:receiverId",
+    "transactionStatus": "edi:status",
+
+    "ndc": "pharmacy:ndc",
+    "rxNumber": "pharmacy:rxNumber",
+    "drugName": "pharmacy:drugName",
+    "prescriber": "pharmacy:prescriber",
+    "dispenseDate": "pharmacy:dispenseDate",
+    "daysSupply": "pharmacy:daysSupply",
+    "quantity": "pharmacy:quantity",
+
+    "storeNumber": "ra:storeNumber",
+    "hasPharmacy": "ra:hasPharmacy",
+    "screeningType": "ra:screeningType",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "identifier": "schema:identifier",
+    "address": "schema:address",
+    "telephone": "schema:telephone",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+    "price": "schema:price",
+    "priceCurrency": "schema:priceCurrency"
+  }
+}
