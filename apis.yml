@@ -61,6 +61,10 @@ apis:
       - type: MobileApp
         url: https://riteaid.com/app
 common:
+  - type: GitHubOrganization
+    url: https://github.com/Rite-Aid
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/riteaid
   - type: Website
     url: https://www.rite-aid.com
   - type: EDIPortal
