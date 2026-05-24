@@ -83,6 +83,8 @@ common:
     url: https://raw.githubusercontent.com/api-evangelist/rite-aid/refs/heads/main/json-ld/rite-aid-context.jsonld
   - type: Vocabulary
     url: https://raw.githubusercontent.com/api-evangelist/rite-aid/refs/heads/main/vocabulary/rite-aid-vocabulary.yml
+  - type: LLMsTxt
+    url: https://rite-aid.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
