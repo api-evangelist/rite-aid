@@ -61,6 +61,8 @@ apis:
       - type: MobileApp
         url: https://riteaid.com/app
 common:
+  - type: DomainSecurity
+    url: security/rite-aid-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/Rite-Aid
   - type: LinkedIn

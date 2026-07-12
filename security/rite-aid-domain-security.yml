@@ -1,0 +1,31 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.rite-aid.com
+  https: true
+  tls_cert_error: '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+    local issuer certificate (_ssl.c:1082)'
+  hsts: null
+- host: www.riteaidediservices.com
+  https: true
+  tls_cert_error: '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch,
+    certificate is not valid for ''www.riteaid'
+  hsts: null
+- host: riteaid.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 26 17:49:06 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: rite-aid.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
+- domain: riteaidediservices.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
