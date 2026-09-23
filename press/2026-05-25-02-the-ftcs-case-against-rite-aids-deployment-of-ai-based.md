@@ -1,7 +1,9 @@
 ---
 title: The FTC's Case Against Rite Aid's Deployment of AI-Based ...
 url: https://www.arnoldporter.com/en/perspectives/advisories/2024/01/ftc-case-against-rite-aid-deployment-of-ai-based-technology
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Rite Aid" press release artificial intelligence'
 position: 2
 source: serpapi-google

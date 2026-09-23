@@ -1,7 +1,9 @@
 ---
 title: Rite Aid to face five-year facial recognition technology ban
 url: https://www.youtube.com/watch?v=k4hkQrkVMZQ
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Rite Aid" press release artificial intelligence'
 position: 5
 source: serpapi-google

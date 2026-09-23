@@ -1,7 +1,9 @@
 ---
 title: Rite Aid Banned from Using AI Facial Recognition After ...
 url: https://www.ftc.gov/news-events/news/press-releases/2023/12/rite-aid-banned-using-ai-facial-recognition-after-ftc-says-retailer-deployed-technology-without
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Rite Aid" press release artificial intelligence'
 position: 1
 source: serpapi-google
