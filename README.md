@@ -66,62 +66,133 @@
 
 Rite Aid is one of the nation's leading drugstore chains, providing prescription drugs, health and beauty aids, and convenience items. Rite Aid supports vendor integrations through EDI (Electronic Data Interchange) and B2B services, and offers digital health tools including an AI health assistant, pharmacy services, vaccination record management, and preventive health screening programs.
 
-## APIs and Integrations
+**Areas:** EDI · Fortune 500 · Health · Pharmacy · Prescriptions · Retail
 
-### Rite Aid EDI Integration
-Rite Aid supports Electronic Data Interchange (EDI) for vendor integration using ANSI/ASC X12 standards (versions 4010 and 5010). Integration is managed through the OpenText Trading Grid platform.
+## Rite Aid on APIs.io
 
-**Supported Transaction Sets:**
+Everything profiled for Rite Aid is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rite-aid/](https://apis.io/providers/rite-aid/)** — or go straight to one of the APIs or properties below.
 
-| Transaction | Name | Description |
-|-------------|------|-------------|
-| 810 | Invoice | Vendor billing to Rite Aid |
-| 820 | Payment Order | Payment remittance |
-| 832 | Price/Sales Catalog | Product pricing data |
-| 846 | Inventory Inquiry/Advice | Inventory status |
-| 850 | Purchase Order | Rite Aid orders to vendors |
-| 855 | Purchase Order Acknowledgment | Vendor confirms PO |
-| 856 | Advance Ship Notice | Pre-shipment notification |
-| 860 | Purchase Order Change | PO modification |
-| 865 | Purchase Order Change Ack | Change acknowledgment |
-| 997 | Functional Acknowledgment | EDI receipt confirmation |
+### APIs (2)
 
-- **EDI Portal:** https://raportal.riteaid.com/
-- **EDI Services:** https://www.riteaidediservices.com/
-- **Documentation:** https://www.riteaidediservices.com/transaction-guidelines/edi-standards-versions-transactions/
+- [Rite Aid EDI Integration](https://apis.io/apis/rite-aid/edi-integration/) — Rite Aid supports Electronic Data Interchange (EDI) for vendor integration using ANSI/ASC X12 standards (versions 4010 and 5010). Supported transactions…
+- [Rite Aid Digital Health Services](https://apis.io/apis/rite-aid/digital-health/) — Rite Aid's digital health platform includes an AI health assistant for informational health queries, pharmacy services with prescription transfer and…
 
-### Rite Aid Digital Health Services
-Rite Aid's digital health platform includes an AI health assistant, pharmacy services with prescription transfer and records management, vaccination record access, and preventive health blood testing programs at 2,000+ locations.
+### Published properties
 
-- **Website:** https://riteaid.com/
-- **Mobile App:** https://riteaid.com/app
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## JSON Schemas
+#### JSON Schema (1)
 
-| Schema | Description |
-|--------|-------------|
-| [rite-aid-edi-transaction-schema.json](json-schema/rite-aid-edi-transaction-schema.json) | ANSI X12 EDI transaction structure |
+The data models the API reads and writes.
 
-## JSON Structures
+- [Rite Aid EDI Transaction](https://apis.io/schemas/rite-aid/rite-aid-edi-transaction/)
 
-| Structure | Description |
-|-----------|-------------|
-| [rite-aid-edi-transaction-structure.json](json-structure/rite-aid-edi-transaction-structure.json) | Field documentation for EDI transactions |
+#### JSON Structure (1)
 
-## JSON-LD
+Data models expressed in JSON Structure.
 
-| Context | Description |
-|---------|-------------|
-| [rite-aid-context.jsonld](json-ld/rite-aid-context.jsonld) | Linked data context for Rite Aid pharmacy, EDI, and health service entities |
+- [Rite Aid Edi Transaction Structure](https://apis.io/json-structure/rite-aid/rite-aid-edi-transaction-structure/)
 
-## Vocabulary
+#### JSON-LD (1)
 
-- [rite-aid-vocabulary.yml](vocabulary/rite-aid-vocabulary.yml) — Domain vocabulary covering EDI standards, pharmacy operations, and vendor integration
+Linked-data contexts for the provider's vocabulary.
 
-## Links
+- [Rite Aid Context](https://apis.io/jsonld/rite-aid/rite-aid-context/)
 
-- **Website:** https://www.rite-aid.com
-- **EDI Services:** https://www.riteaidediservices.com/
-- **Vendor Portal:** https://raportal.riteaid.com/
-- **Mobile App:** https://riteaid.com/app
-- **Privacy Policy:** https://www.riteaid.com/privacy-policy
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Rite Aid Vocabulary](https://apis.io/vocabularies/rite-aid/rite-aid-vocabulary/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Rite Aid — jsonschema rules](https://apis.io/rules/rite-aid/rite-aid-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Rite Aid Domain Security](https://apis.io/security/rite-aid/rite-aid-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Rite Aid Plans Pricing](https://apis.io/plans/rite-aid/rite-aid-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rite Aid Rate Limits](https://apis.io/rate-limits/rite-aid/rite-aid-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Rite Aid Finops](https://apis.io/finops/rite-aid/rite-aid-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.rite-aid.com)
+- [Terms of service](https://www.riteaid.com/terms-of-use)
+- [Privacy policy](https://www.riteaid.com/privacy-policy)
+- [GitHub](https://github.com/Rite-Aid)
+
+## API Evangelist rating
+
+**Kin Score 16.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 10.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 14.3 |
+| Access clarity | 5.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rite-aid/](https://apis.io/providers/rite-aid/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Rite Aid: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rite-aid/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
